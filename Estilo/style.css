@@ -23,7 +23,7 @@
 
 body{
     background-color: var(--body);
-    
+
 }
 
 header{
@@ -36,4 +36,52 @@ header{
 header h1{
     padding-top: 60px;
     font-size: 2.1em;
+}
+
+
+.conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var();
+    
+
+}
+
+.projetos{
+    flex: 1;
+    border-radius: 0% 5% 5% 0%;
+    margin: 10px;
+}
+
+#projeto1{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--roxo-normal)
+}
+
+.img-conteiner{
+    background: url(../imagens/florest-games.jpg) no-repeat center;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+}
+
+.h1-p{
+    flex: 1;
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+.h1-p h1{
+    text-align: center;
+    font-size: 1.7pc;
+    padding-bottom: 10px;
+}
+
+#projeto1 img{
+    padding: 10px;
+    height: 150px;
+    width: 150px;
 }
