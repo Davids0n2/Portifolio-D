@@ -21,9 +21,17 @@
     --letra-article:#0d2232;
 }
 
+h1,p{
+    color:#000000;
+}
+
+p{
+    
+    text-align: justify;
+}
+
 body{
     background-color: var(--body);
-
 }
 
 header{
@@ -42,46 +50,59 @@ header h1{
 .conteiner{
     display: flex;
     flex-wrap: wrap;
-    background-color: var();
-    
+    background: linear-gradient( to bottom right, var(--letra-article) 30% , var(--roxo-normal) 75%);
 
 }
 
 .projetos{
     flex: 1;
-    border-radius: 0% 5% 5% 0%;
     margin: 10px;
+    background-color: #ffffff25;
+    backdrop-filter: blur(4px);
+    padding: 20px ;
+    border-radius: 5%;
 }
 
 #projeto1{
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
-    background-color: var(--roxo-normal)
+    flex-direction:column ;
+    align-items: center;
+    text-align: center;
 }
 
 .img-conteiner{
     background: url(../imagens/florest-games.jpg) no-repeat center;
+    border-radius: 50%;
     background-size: cover;
+    width: 250px;
+    height: 250px
+}
+
+
+/*
+    Projeto 2
+*/
+
+#projeto2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.img-conteiner2{
+    background: url(../imagens/cordel-moderno.jpg) no-repeat center;
+    background-size: cover;
+    border-radius: 50%;
     width: 250px;
     height: 250px;
 }
 
-.h1-p{
-    flex: 1;
+.proj2{
     padding: 10px;
-    text-align: justify;
-    
 }
 
-.h1-p h1{
-    text-align: center;
+.proj2 h1{
     font-size: 1.7pc;
-    padding-bottom: 10px;
-}
-
-#projeto1 img{
-    padding: 10px;
-    height: 150px;
-    width: 150px;
 }
