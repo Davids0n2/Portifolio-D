@@ -14,95 +14,193 @@
 }
 
 :root{
-    --body:#cfd9e2;
-    --letra-header:#5766b3;
-    --roxo-normal: #6964e2;
-    --roxo-light:#102b3e;
-    --letra-article:#0d2232;
+    --letra: rgb(40, 40, 40);
+    --Dii: rgb(205, 205, 205) ;
 }
 
-h1,p{
-    color:#000000;
-}
-
-p{
-    
-    text-align: justify;
-}
-
-body{
-    background-color: var(--body);
-}
+/*Header*/
 
 header{
-    background-color:var(--roxo-light);
-    height: 250px;
-    color: var(--letra-header);
+    background-color: var(--Dii);
+    border-radius: 0px 0px 70px 70px;
     text-align: center;
 }
 
-header h1{
-    padding-top: 60px;
-    font-size: 2.1em;
+
+
+/*Header Nav*/
+
+nav{
+    background-color: rgb(255, 255, 255);
 }
 
-
-.conteiner{
+.menu{
     display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient( to bottom right, var(--letra-article) 30% , var(--roxo-normal) 75%);
-
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
 }
 
-.projetos{
-    flex: 1;
+.lista{
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
     margin: 10px;
-    background-color: #ffffff25;
-    backdrop-filter: blur(4px);
-    padding: 20px ;
-    border-radius: 5%;
 }
 
-#projeto1{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column ;
-    align-items: center;
-    text-align: center;
+a{
+    text-decoration:none ;
+    color: #000;
 }
 
-.img-conteiner{
-    background: url(../imagens/florest-games.jpg) no-repeat center;
-    border-radius: 50%;
-    background-size: cover;
-    width: 250px;
-    height: 250px
+li{
+    transition: 0.4s;
+    padding: 10px;
+    border-radius: 20px;
+    list-style: none;
+    margin: 10px;
 }
 
 
-/*
-    Projeto 2
-*/
-
-#projeto2{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-.img-conteiner2{
-    background: url(../imagens/cordel-moderno.jpg) no-repeat center;
-    background-size: cover;
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-
-.proj2{
+.pg a{
+    box-shadow: 1px 1px 6px black;
+    border: 1px solid black;
+    border-radius: 20px;
     padding: 10px;
 }
 
-.proj2 h1{
-    font-size: 1.7pc;
+.pg a:hover{
+    box-shadow: 1px 1px 6px white;
+    border-radius: 20px;
+    transition: 0.6s;
+    color: white;
+    font-weight: bolder;
+    background-color: black;
+    
+}
+
+
+
+/*Header apresentação*/
+
+.apresentacao{
+    padding: 20px;
+}
+
+.apresentacao h1{
+    font-size: 29px;
+}
+
+.foto-perfil img{
+    border: 2px solid rgb(174, 174, 174);
+    border-radius: 50% ;
+    height: 150px;
+    width: 150px;
+}
+
+.redesocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta img{
+    height: 50px;
+    width: 50px;
+}
+.github img{
+    height: 50px;
+    width: 50px;
+}
+
+/*Especialidades*/
+
+.especialidades{
+    display: flex;
+    border-radius: 0px 0px 90px 90px;
+    background-color: white;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.especialidades h1{
+    font-size: 20px;
+}
+
+.icones-tr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon{
+    text-align: center;
+    margin: 20px;
+}
+
+.icon p{
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.icon img{
+    width: 80px;
+}
+
+/*Projetos*/
+
+.projetos-icons{
+    background-color: var(--Dii);
+}
+
+.meus-projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.meus-projetos h1{
+    font-size: 25px;
+}
+
+.conteiner{
+    display: flex;
+    align-items: center;
+}
+
+.projetos{
+    margin: 20px;
+    background-color: var(--Dii);
+    border: 3px solid red; 
+}
+
+
+#proj1 img{
+    width: 200px; 
+    height: 200px; 
+}
+
+#proj2 img{
+    width: 200px; 
+    height: 200px; 
+}
+
+#proj3 img{
+    width: 200px; 
+    height: 200px; 
+}
+
+
+
+.sobre{
+    background-color: white;
+    border-radius: 70px 70px 0px 0px ;
+    height: 100px;
 }
