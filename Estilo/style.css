@@ -197,7 +197,7 @@ span{
 
 .projetos h1, p{
     text-align: center;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 #proj1 img{
@@ -223,9 +223,6 @@ span{
     height:230px;
 }
 
-
-
-
 .sobre{
     display: flex;
     background-color: white;
@@ -250,4 +247,17 @@ span{
 
 .biografia{
     margin: 15px;
+}
+
+.deploy {
+    margin: 5px;
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.4s;
+    border: 1px solid #000;
 }
