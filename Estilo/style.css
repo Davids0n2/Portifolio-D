@@ -34,6 +34,7 @@ header{
 
 nav{
     background-color: rgb(255, 255, 255);
+    position: relative;
 }
 
 .menu{
@@ -43,6 +44,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    padding: 0;
     
 }
 
@@ -84,6 +86,14 @@ li{
     
 }
 
+.menu-toggle { 
+    display: none; 
+    background: none; 
+    border: none; 
+    font-size: 30px; 
+    cursor: pointer; 
+}
+
 
 
 /*Header apresentação*/
@@ -109,10 +119,12 @@ li{
     align-items: center;
 }
 
-.insta img{
-    height: 50px;
-    width: 50px;
+.tiktok img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
 }
+
 .github img{
     height: 50px;
     width: 50px;
@@ -142,6 +154,7 @@ li{
 }
 
 .icon{
+    cursor: pointer;
     text-align: center;
     margin: 20px;
 }
@@ -256,8 +269,14 @@ span{
 
 button{
     cursor: pointer;
+    font-weight: bolder;
+    cursor: pointer;
     border-radius: 20px;
     padding: 10px;
     transition: 0.4s;
     border: 1px solid #000;
+}
+
+button:hover{
+    box-shadow: 1px 1px 7px black;
 }

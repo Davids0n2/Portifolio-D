@@ -4,34 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilo/style.css">
+    <link rel="stylesheet" href="Estilo/media.css">
     <title>Meu - Protifólio</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul class="menu">
-                <div class="lista">
-                    <li>|</li>
-                    <li class="pg"><a href="#">Inicio</a></li>
-                    <li>|</li>
-                    <li class="pg"><a href="#">Sobre</a></li>
-                    <li>|</li>
-                    <li class="pg"><a href="#">Contactar</a></li>
-                    <li>|</li>
-                </div>
-            </ul>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <ul class="menu">
+                    <div class="lista">
+                        <li class="mud">|</li>
+
+                        <li class="pg"><a href="index.html">Inicio</a></li>
+
+                        <li class="mud">|</li>
+
+                        <li class="pg"><a href="#sobre">Sobre</a></li>
+
+                        <li class="mud">|</li>
+
+                        <li class="pg"><a href="mailto:davidand.tor007@gmail.com">Contato</a></li>
+
+                        <li class="mud">|</li>
+                    </div>
+                </ul>
         </nav>
         <div class="apresentacao">
             <div class="foto-perfil"><img src="imagens/pft.jpg" alt="Foto de perfil"></div>
             <h1>Me chamo David</h1>
             <p>Desenvolvedor web</p>
             <div class="redesocial">
-                <div class="insta"><a href="#"><img src="imagens/icon-insta.png" alt="instagram"></a></div>
+                <div class="tiktok"><a href="https://www.tiktok.com/@ddavids0n2"><img src="imagens/icon-tiktok.png" alt="tiktok"></a></div>
                 <div class="github"><a href="https://github.com/Davids0n2"><img src="imagens/icon-github.png" alt="github"></a></div>
 
             </div>
         </div>
     </header>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+
+    <script>
+
+        function checkWidth() {
+            const items = document.querySelectorAll('.mud');
+            const width = window.innerWidth;
+        
+            items.forEach(item => {
+                if (width <= 680) {
+                    item.textContent = '__';
+                } else {
+                    item.textContent = '|';
+                }
+            });
+        }
+        
+        checkWidth();
+        window.addEventListener('resize', checkWidth);
+
+    </script>
+    
+        
     <main>
         <article>
         </section>
@@ -55,7 +91,7 @@
                             <h1>Food PeeK</h1>
                         </span>
                         <p>landing page para divulgar uma mercadoria fictícia (FooD PeeK)</p>
-                        <div class="deploy"><a href="">
+                        <div class="deploy"><a href="https://davids0n2.github.io/Landing-page/">
                             <button>Versão deploy</button>
                             </a></div>
                     </div>
@@ -66,7 +102,7 @@
                             <h1>Marketing Creativo</h1>
                         </span>
                         <p>landing page para a uma marca fictícia (Marketing Creativo)</p>
-                        <div class="deploy"><a href="">
+                        <div class="deploy"><a href="https://davids0n2.github.io/login-page/">
                             <button>Versão deploy</button>
                             </a></div>
                     </div>
@@ -77,7 +113,7 @@
                             <h1>Cordel Moderno</h1>
                         </span>
                         <p>Site feito no meu curso com efeito paralax sobre um poema do Milton Duarte</p>
-                        <div class="deploy"><a href="">
+                        <div class="deploy"><a href="https://davids0n2.github.io/Projeto-cordel-moderno/">
                                 <button>Versão deploy</button>
                             </a></div>
                     </div>
@@ -87,7 +123,7 @@
 
 
             
-            <section class="sobre">
+            <section class="sobre" id="sobre">
                 <div class="h1-sobre">
                     <H1>Sobre-mim</H1>
                 </div>

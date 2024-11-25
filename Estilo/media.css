@@ -1,0 +1,46 @@
+@media screen and (max-width: 680px) {
+
+
+    header{
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .especialidades{
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .menu { 
+        display: none; /* Alterado: Menu inicialmente oculto */ 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: flex-start; width: 100%; box-shadow: none; /* Adicionado: Remoção da sombra no modo mobile */ 
+    }
+
+    .menu.active { 
+        display: flex; /* Adicionado: Menu visível quando ativo */ 
+    } 
+        
+    .menu-toggle { 
+        display: block; /* Adicionado: Botão de menu visível no modo mobile */ 
+    }
+
+    .lista { 
+        flex-direction: column; /* Adicionado: Mudança na direção da lista */ 
+        width: 100%; 
+        padding: 0; /* Adicionado: Padding zerado */ 
+    } 
+
+    li { 
+        margin: 0; /* Adicionado: Margem zerada */
+        border-bottom: 1px solid #ddd; /* Adicionado: Linha de separação */ 
+        width: 100%; /* Adicionado: Largura total */ 
+        text-align: center; /* Adicionado: Centralização do texto */ 
+    } 
+
+    .pg a {
+        width: 100%; /* Adicionado: Largura total */ 
+        box-shadow: none; /* Adicionado: Remoção da sombra */ 
+        border: none; /* Adicionado: Remoção da borda */ 
+        border-radius: 0; /* Adicionado: Remoção do border-radius */ 
+    }
+}
