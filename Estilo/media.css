@@ -10,37 +10,37 @@
     }
 
     .menu { 
-        display: none; /* Alterado: Menu inicialmente oculto */ 
+        display: none; 
         flex-direction: column; 
         justify-content: flex-start; 
-        align-items: flex-start; width: 100%; box-shadow: none; /* Adicionado: Remoção da sombra no modo mobile */ 
+        align-items: flex-start; width: 100%; box-shadow: none;
     }
 
     .menu.active { 
-        display: flex; /* Adicionado: Menu visível quando ativo */ 
+        display: flex;  
     } 
         
     .menu-toggle { 
-        display: block; /* Adicionado: Botão de menu visível no modo mobile */ 
+        display: block; 
     }
 
     .lista { 
-        flex-direction: column; /* Adicionado: Mudança na direção da lista */ 
+        flex-direction: column; 
         width: 100%; 
-        padding: 0; /* Adicionado: Padding zerado */ 
+        padding: 0; 
     } 
 
     li { 
-        margin: 0; /* Adicionado: Margem zerada */
-        border-bottom: 1px solid #ddd; /* Adicionado: Linha de separação */ 
-        width: 100%; /* Adicionado: Largura total */ 
-        text-align: center; /* Adicionado: Centralização do texto */ 
+        margin: 0; 
+        border-bottom: 1px solid #ddd; 
+        width: 100%; 
+        text-align: center; 
     } 
 
     .pg a {
-        width: 100%; /* Adicionado: Largura total */ 
-        box-shadow: none; /* Adicionado: Remoção da sombra */ 
-        border: none; /* Adicionado: Remoção da borda */ 
-        border-radius: 0; /* Adicionado: Remoção do border-radius */ 
+        width: 100%; 
+        box-shadow: none; 
+        border: none; 
+        border-radius: 0;
     }
 }
