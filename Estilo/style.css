@@ -252,10 +252,8 @@ span{
 }
 
 
-#proj1{
-    background-color: linear-gradient(to top, black 0% , rgb(201, 27, 27)255 100%);
 
-}
+/*Sobre mim*/
 
 .sobre{
     display: flex;
@@ -283,6 +281,9 @@ span{
     margin: 15px;
 }
 
+
+/*Botões*/
+
 .deploy {
     margin: 5px;
     text-align: center;
@@ -293,7 +294,8 @@ button{
     font-weight: bolder;
     cursor: pointer;
     border-radius: 20px;
-    padding: 10px;
+    padding: 10px 20px;
+    margin: 5px;
     transition: 0.4s;
     border: 1px solid #000;
 }
