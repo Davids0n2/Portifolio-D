@@ -231,6 +231,7 @@ span{
     box-shadow: 1px 1px 6px black;
 }
 
+
 .projetos h1, p{
     text-align: center;
     padding-top: 10px;
@@ -244,13 +245,13 @@ span{
 .projetos img{
     width: 340px;
     height: 230px;
-    border-radius: 0px 0px 10px 10px; 
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
 }
 
 .projetos h1{
     font-size: 1.4pc;
 }
-
 
 
 /*Sobre mim*/
